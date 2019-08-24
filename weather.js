@@ -9,7 +9,7 @@ function getWeather(lat, lng){
     }).then(function(json){
         const temparature = json.main.temp;
         const place = json.name;
-        weather.innerText = `${temparature} @ ${place}`;
+        weather.innerText = `🌡 ${temparature} 🌏 ${place}`;
     })
 
 }
